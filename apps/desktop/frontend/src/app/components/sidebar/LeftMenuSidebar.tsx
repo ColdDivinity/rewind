@@ -6,8 +6,7 @@ import React, { useCallback, useEffect, useState } from "react";
 import { useAppDispatch, useAppSelector } from "../../hooks/redux";
 import UpdateIcon from "@mui/icons-material/Update";
 import { setUpdateModalOpen } from "../../store/update/slice";
-import { useLocation } from "react-router";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, useLocation  } from "react-router-dom";
 import { ELECTRON_UPDATE_FLAG } from "../../utils/constants";
 import { useAppInfo } from "../../hooks/app-info";
 

@@ -36,18 +36,16 @@ import { join } from "path";
   const container = document.getElementById("root") as HTMLElement;
   const root = createRoot(container);
   root.render(
-    <StrictMode>
-      <Provider store={store}>
-        {/* Using `HashRouter` due to Electron https://github.com/remix-run/history/blob/dev/docs/api-reference.md#createhashhistory */}
-        <HashRouter>
-          <ThemeProvider theme={rewindTheme}>
-            <CssBaseline />
-            <TheaterProvider theater={theater}>
-              <RewindApp />
-            </TheaterProvider>
-          </ThemeProvider>
-        </HashRouter>
-      </Provider>
-    </StrictMode>,
+    <Provider store={store}>
+      {/* Using `HashRouter` due to Electron https://github.com/remix-run/history/blob/dev/docs/api-reference.md#createhashhistory */}
+      <HashRouter>
+        <ThemeProvider theme={rewindTheme}>
+          <CssBaseline />
+          <TheaterProvider theater={theater}>
+            <RewindApp />
+          </TheaterProvider>
+        </ThemeProvider>
+      </HashRouter>
+    </Provider>,
   );
 })();

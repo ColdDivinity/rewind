@@ -5,6 +5,6 @@ export const environment = {
   production: false,
   debugAnalyzer: {
     replayPath:
-      "D:/osu!/Replays/abstrakt - Bliitzit - Team Magma & Aqua Leader Battle Theme (Unofficial) [SMOKELIND's Insane] (2022-03-15) Osu.osr",
+      "C:/Users/miko/AppData/Local/osu!/Replays/ - ALiCE'S EMOTiON - Cold Rain [Lunatic] (2023-05-22) Osu.osr",
   },
 };
